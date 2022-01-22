@@ -1,18 +1,22 @@
 package com.example;
 
-import java.io.File;
 import java.io.IOException;
-import java.io.PrintStream;
 import java.time.Instant;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 public class App {
 
     public static void main(String[] args) throws InterruptedException, IOException {
-        File file = new File("logs/teste.log");
-        if (!file.exists()) {
-            file.createNewFile();
-        }
-        System.setOut(new PrintStream(file));
+        // File file = new File("logs/teste.log");
+        // if (!file.exists()) {
+        //     file.createNewFile();
+        // }
+        // System.setOut(new PrintStream(file));
+        Logger logger = LoggerFactory.getLogger(App.class);
+        logger.info("TESTE LOGGER");
+
         while (true) {
             final long sleepTime = Math.round(Math.random() * 2000);
             Thread.sleep(sleepTime);
