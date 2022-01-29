@@ -18,7 +18,6 @@
 		"vscjava.vscode-maven",
 		"vscjava.vscode-java-pack",
 		"redhat.fabric8-analytics",
-		"pflannery.vscode-versionlens",
-		"michelemelluso.gitignore"
+		"pflannery.vscode-versionlens"
 	]
 }
